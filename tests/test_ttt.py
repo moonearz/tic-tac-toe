@@ -1,6 +1,6 @@
 import pytest
 
-from game_search.tic_tac_toe import (
+from tic_tac_toe.game import (
     Move,
     Player,
     State,

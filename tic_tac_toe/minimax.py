@@ -1,10 +1,10 @@
 import math
 
-from .game import Game, Move, Player, State
+from .game import Move, Player, State, TicTacToe
 
 
 def minimax(
-    game: Game, state: State, maximizing_player: Player | None = None
+    game: TicTacToe, state: State, maximizing_player: Player | None = None
 ) -> tuple[Move, float]:
     if maximizing_player is None:
         maximizing_player = game.current_player(state)
